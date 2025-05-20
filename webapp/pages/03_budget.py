@@ -28,9 +28,7 @@ st.write(f'expenses for {month1}/{year1}:')
 st.dataframe(df_filter)
 st.title("Amount (Converted to USD) :money_with_wings:")
 st.line_chart(df_filter["Amount in USD"])
-
-if st.button("clear"):
-    clear()
+st.button("clear",on_click=clear)
 
 
 
